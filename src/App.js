@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 
 
 import './App.css';
-import LoginPage from './components/LoginPage'
-import HomePage from './components/HomePage'
+import HomePage from './pages/HomePage'
+// import ProfilePage from './pages/ProfilePage'
 
 class App extends Component {
   render() {
@@ -14,7 +14,6 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/login" component={LoginPage}/>
           </div>
         </Router>
       </div>
